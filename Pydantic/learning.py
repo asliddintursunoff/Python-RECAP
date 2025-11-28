@@ -1,3 +1,16 @@
+'''
+Docstring for Pydantic.learning
+Serializer - is for converting data one type to another
+    Pydantic model -> json
+    Pydantic model -> dict
+    dict -> Pydantic model
+    json -> Pydantic model 
+
+Validators is for validading data(checking every data member or whole class that to be true)
+Forexample: 
+    you should take interger higher than 0 -> so you should need to write validator for checking value>0
+'''
+
 from pydantic import BaseModel
 from typing import Union,Optional
 class Person(BaseModel):
